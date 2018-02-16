@@ -1,0 +1,96 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+@keyframes dropCards {
+ /* 0% {
+    transform: translate(-1000px, -100% );
+  }
+  100% {
+    transform: translate(0, 0);
+  }*/
+
+  from {
+    left: 200%;
+   // width: 100%; 
+  }
+
+  to {
+    left: 0%;
+   // width: 100%;
+  }
+}
+
+.logo{
+  position: relative;
+  bottom: 5px;
+}
+
+.reset{
+  position: relative;
+  top: 7px;
+  right: 1%;
+}
+
+body {
+    padding-top: 70px ; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  .card{
+   /* margin-bottom: 30px;
+    max-width: 300px;
+    min-width: 300px;*/
+    animation-name: dropCards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.4s;
+
+    animation-direction: alternate;
+
+    .thumbnail{
+      background-color:black;
+      background-image: url(../img/card_back.jpg);
+      background-size: contain;
+      transition: transform 1s;
+      transition-timing-function: ease-in-out;
+      cursor: pointer;
+      img{
+        opacity:0;
+        transition: opacity 0.1s, transform 0.1s;
+        transition-delay: 0.5s;
+        /*width:300px;
+        height: 150px;*/
+      }
+      .champName{
+        opacity:0;
+        transition: opacity 0.1s, transform 0.1s;
+        transition-delay: 0.5s;
+        background-color: black;
+        color:white;
+      }
+    }
+    .rotated {
+      transform: rotateY(180deg);
+      img{
+        opacity: 1;
+        z-index: 5;
+        transform: rotateY(180deg);
+      }
+      .champName{
+        opacity: 1;
+        z-index: 10;
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  left: 100;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(131, 131, 155, 0.356);
+  color: black;
+  text-align: center;
+}

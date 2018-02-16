@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LOL Memory Game</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pair the cards together">
+    <meta name="keywords" content="HTML5 Game,Memory Game, LOL, Bootstrap, CSS, LESS, Angular">
+    <meta name="author" content="Alex Jacquot">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+
+    <!-- Custom LESS stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="./style/style.less">
+
+
+    <!-- LESS Core Library -->
+    <script src="./lib/less.min.js" data-poll="1000" data-relative-urls="true"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="./lib/node_modules/angular/angular.js"></script>
+    <script src="./app.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="http://www.leagueoflegends.com">
+                    <img src="./img/lol.png" width="30" height="30" alt="LOL">
+                </a>
+                <a class="navbar-brand navbar-left" href="#">LOL Memory game</a>
+            </div>
+            <button class="btn btn-primary btn-outline-success navbar-right reset" href="#">Play</button>
+        </div>
+
+        <!-- /.container -->
+    </nav>
+
+    <!--<input type="text" ng-model="$scope.numberCards"/>-->
+    
+    <!-- Page Content -->
+    <section class="container-fluid playboard" ng-app="memo" ng-controller="memoCtrl">
+        <!--<div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 card">
+                <figure class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg" alt="">
+                    <div class="champName">Thresh</div>
+                </figure>
+
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 card">
+                <figure class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg" alt="">
+                    <div class="champName">Ivern</div>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 card">
+                <figure class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg" alt="">
+                    <div class="champName">Taric</div>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 card">
+                <figure class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_1.jpg" alt="">
+                    <div class="champName">Thresh</div>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 card">
+                <figure class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_1.jpg" alt="">
+                    <div class="champName">Ivern</div>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 card">
+                <figure class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_1.jpg" alt="">
+                    <div class="champName">Taric</div>
+                </figure>
+            </div>
+
+        </div>  -->
+
+    </section>
+        <!-- Footer -->
+        <footer>
+            <div class="row col-lg-12">
+
+                <p>Made by Alex JACQUOT, more at
+                    <a href="https:/alex-jacquot.github.io">alex-jacquot.github.io</a>
+                </p>
+
+            </div>
+        </footer>
+
+    
+
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap slider -->
+    <!--
+    <link rel="stylesheet/css" type="text/css" href="./lib/bootstrap-slider.min.css"></script>
+    <script src="./lib/bootstrap-slider.min.js" data-poll="1000" data-relative-urls="true"></script>
+    -->
+
+    <script src="./click.js"></script>
+</body>
+
+</html>
