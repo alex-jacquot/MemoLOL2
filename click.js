@@ -12,8 +12,13 @@ var cardsWon = [];
 var numberCards = 2; //Min
 
 $(document).ready(function() {
-  $(".card").click(turnAround);
-  $(".reset").click(resetGame);
+
+  /*Timer so that Github pages doesn't f*** up the call to event binders*/
+  setTimeout(function() {
+    $(".card").click(turnAround);
+    $(".reset").click(resetGame);
+  }, 1200);
+  
 
   numberCards = $(this).find(".thumbnail").length / 2;
   console.log("Number of cards: " + numberCards);
@@ -62,16 +67,14 @@ function resetCards() {
   if (cardsCurrentlyOpened[0] == cardsCurrentlyOpened[1]) {
     console.log("Same cards== lock rotated");
     cardsWon.push(cardsCurrentlyOpened[0]);
-    $(".champName").each(function(index){
-      if($(this).text() == cardsCurrentlyOpened[0]){
-        $(this).css('background-color', 'darkgreen');
+    $(".champName").each(function(index) {
+      if ($(this).text() == cardsCurrentlyOpened[0]) {
+        $(this).css("background-color", "darkgreen");
       }
     });
-
   } else {
     console.log("Put cards back again");
     $("figure").each(function(index) {
-      //console.log(this);
       if (
         !cardsWon.includes(
           $(this)
