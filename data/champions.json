@@ -355,7 +355,7 @@
             },
             "key": "Cassiopeia",
             "name": "Cassiopeia",
-            "title": "the Serpent's Embrace"
+            "title": "the Serpents Embrace"
         },
         "Chogath": {
             "id": 31,
@@ -375,7 +375,7 @@
                 "magic": 7
             },
             "key": "Chogath",
-            "name": "Cho'Gath",
+            "name": "ChoGath",
             "title": "the Terror of the Void"
         },
         "Corki": {
@@ -544,7 +544,7 @@
             },
             "key": "Evelynn",
             "name": "Evelynn",
-            "title": "Agony's Embrace"
+            "title": "Agonys Embrace"
         },
         "Ezreal": {
             "id": 81,
@@ -880,7 +880,7 @@
             },
             "key": "Janna",
             "name": "Janna",
-            "title": "the Storm's Fury"
+            "title": "the Storms Fury"
         },
         "JarvanIV": {
             "id": 59,
@@ -1173,7 +1173,7 @@
                 "magic": 3
             },
             "key": "Khazix",
-            "name": "Kha'Zix",
+            "name": "KhaZix",
             "title": "the Voidreaver"
         },
         "Kindred": {
@@ -1236,7 +1236,7 @@
                 "magic": 5
             },
             "key": "KogMaw",
-            "name": "Kog'Maw",
+            "name": "KogMaw",
             "title": "the Mouth of the Abyss"
         },
         "Leblanc": {
@@ -1804,7 +1804,7 @@
             },
             "key": "Quinn",
             "name": "Quinn",
-            "title": "Demacia's Wings"
+            "title": "Demacias Wings"
         },
         "Rakan": {
             "id": 497,
@@ -1866,7 +1866,7 @@
                 "magic": 2
             },
             "key": "RekSai",
-            "name": "Rek'Sai",
+            "name": "RekSai",
             "title": "the Void Burrower"
         },
         "Renekton": {
@@ -2287,7 +2287,7 @@
             },
             "key": "Talon",
             "name": "Talon",
-            "title": "the Blade's Shadow"
+            "title": "the Blades Shadow"
         },
         "Taric": {
             "id": 44,
@@ -2580,7 +2580,7 @@
                 "magic": 10
             },
             "key": "Velkoz",
-            "name": "Vel'Koz",
+            "name": "VelKoz",
             "title": "the Eye of the Void"
         },
         "Vi": {
@@ -2665,7 +2665,7 @@
             },
             "key": "Volibear",
             "name": "Volibear",
-            "title": "the Thunder's Roar"
+            "title": "the Thunders Roar"
         },
         "Warwick": {
             "id": 19,
