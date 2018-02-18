@@ -14,16 +14,17 @@ var numberCards = 2; //Min
 $(document).ready(function() {
   $(".card").click(turnAround);
   $(".reset").click(resetGame);
-  
+
   numberCards = $(this).find(".thumbnail").length / 2;
   console.log("Number of cards: " + numberCards);
 });
 
-function resetGame(){
-    location.reload(true);
+function resetGame() {
+  location.reload(true);
 }
 
 function turnAround() {
+  console.log("What?");
   var elements = $(this).find(".thumbnail");
   for (var i = 0; i < elements.length; i++) {
     var champName = elements.find(".champName").html(); //NAme of the champion in the clicked card
@@ -61,6 +62,12 @@ function resetCards() {
   if (cardsCurrentlyOpened[0] == cardsCurrentlyOpened[1]) {
     console.log("Same cards== lock rotated");
     cardsWon.push(cardsCurrentlyOpened[0]);
+    $(".champName").each(function(index){
+      if($(this).text() == cardsCurrentlyOpened[0]){
+        $(this).css('background-color', 'darkgreen');
+      }
+    });
+
   } else {
     console.log("Put cards back again");
     $("figure").each(function(index) {
@@ -74,6 +81,9 @@ function resetCards() {
       ) {
         $(this).removeClass("rotated");
       }
+      $(this)
+        .find(".champName")
+        .addClass("cardwon");
     });
   }
 
