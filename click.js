@@ -9,13 +9,19 @@
 
 var cardsCurrentlyOpened = [];
 var cardsWon = [];
-var numberCards = 2;//Min
+var numberCards = 2; //Min
 
 $(document).ready(function() {
   $(".card").click(turnAround);
-  numberCards = $(this).find(".thumbnail").length/2;
-  console.log("Number of cards: " +numberCards);
+  $(".reset").click(resetGame);
+  
+  numberCards = $(this).find(".thumbnail").length / 2;
+  console.log("Number of cards: " + numberCards);
 });
+
+function resetGame(){
+    location.reload(true);
+}
 
 function turnAround() {
   var elements = $(this).find(".thumbnail");
@@ -24,7 +30,7 @@ function turnAround() {
     console.log("Card clicked: " + champName);
     //If the card is showing its backface..
     if (elements[i].className == "thumbnail") {
-        //prevents from turning the card duing the 1 secnd period
+      //prevents from turning the card duing the 1 secnd period
       if (cardsCurrentlyOpened.length != 2) {
         elements[i].className += " rotated"; //rotate it
         cardsCurrentlyOpened.push(champName);
@@ -71,14 +77,14 @@ function resetCards() {
     });
   }
 
-  if(cardsWon.length == numberCards){
-      youWin();
+  if (cardsWon.length == numberCards) {
+    youWin();
   }
 
   console.log("Emptying opened cards");
   cardsCurrentlyOpened = [];
 }
 
-function youWin(){
-    alert("YOU WON!");
+function youWin() {
+  alert("YOU WON!");
 }
