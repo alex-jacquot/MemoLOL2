@@ -67,5 +67,5 @@ function shuffle(a) {
     ,
     template:
         '<div class="col-lg-3 col-md-4 col-xs-6 card"><figure class="thumbnail" href="#"><img class="img-responsive" src="{{card.text}}" alt=""><div class="champName">{{card.text}}</div></figure></div>'
-}); //DOESNT FUCKIN WORK JEEZ
+}); 
 */

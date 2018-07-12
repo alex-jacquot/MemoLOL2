@@ -13,11 +13,11 @@ var numberCards = 2; //Min
 
 $(document).ready(function() {
 
-  /*Timer so that Github pages doesn't f*** up the call to event binders*/
+  /*Timer so that Github pages properly do the call to event binders*/
   setTimeout(function() {
     $(".card").click(turnAround);
     $(".reset").click(resetGame);
-  }, 1200);
+  }, 2000);
   
 
   numberCards = $(this).find(".thumbnail").length / 2;
@@ -90,7 +90,7 @@ function resetCards() {
     });
   }
 
-  if (cardsWon.length == numberCards) {
+  if (cardsWon.length == 3) {
     youWin();
   }
 
